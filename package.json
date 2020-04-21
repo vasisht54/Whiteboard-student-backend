@@ -13,6 +13,7 @@
   "author": "Sanju Vasisht",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^13.13.1",
     "express": "^4.17.1"
   }
 }

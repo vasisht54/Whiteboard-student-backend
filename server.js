@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-const quizzesController = require('./controllers/quizzes.controller.server');
-quizzesController(app);
+require('./controllers/quizzes.controller.server')(app);
+require('./controllers/questions.controller.server')(app);
 
 app.get('/', (req, res) => res.send("Hello there!"));
 
