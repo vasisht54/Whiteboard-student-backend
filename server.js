@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.use(function(req, res, next) {
-    const allowedOrigins = ['http://myherokuapp.com', 'http://localhost:4200', 'http://127.0.0.1:9000', 'http://localhost:9000'];
+    const allowedOrigins = ['https://vasisht-client-angular.herokuapp.com', 'http://localhost:4200', 'http://127.0.0.1:9000', 'http://localhost:9000'];
     const origin = req.headers.origin;
     if(allowedOrigins.indexOf(origin) > -1){
         res.setHeader('Access-Control-Allow-Origin', origin);
